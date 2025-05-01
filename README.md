@@ -12,17 +12,27 @@ Write a C program to print even numbers ranging from M to N (including M and N v
 7.	Continue the loop until you have iterated through all numbers from M to N.
 
 ## PROGRAM:
+#include<stdio.h>
+int main()
+{
+int M,N;
+printf("Enter the value of M");
+scanf("%d",&M);
+printf("Enter the value of N");
+scanf("%d",&N);
+for(int i=M;i<=N;i++){
+if(i%2==0){
+printf("%d",i);
+}
+printf("\n");
+}
+return 0;
+}
 
 ## OUTPUT:
-
-
-
-
-
-
-
-
-
+Enter the value of M: 4
+Enter the value of N: 16
+output : 4 6 8 10 12 14 16
 
 ## RESULT:
 Thus the program to print even numbers ranging from M to N (including M and N values) has been executed successfully
@@ -45,13 +55,28 @@ Write a C program to print the given triangular pattern using loop.
 5.	Continue the loop until you have printed the entire triangular pattern.
 
 ## PROGRAM:
-
+#include<stdio.h>
+int main()
+{
+int row;
+printf("Enter the value of rows:");
+scanf("%d",&row);
+for(int i=1;i<=row;i++){
+for(int j=1;j<=i;j++){
+printf("#");
+}
+printf("\n");
+}
+return 0;
+}
 
 ## OUTPUT:
-
-
-
-
+Enter number of rows: 5
+#
+##
+###
+####
+#####
 
 ## RESULT:
 
@@ -74,6 +99,14 @@ Write a C program to perform addition and subtraction of two numbers using funct
 4.	Call the addition and subtraction functions, passing the two numbers as arguments.
 
 ## PROGRAM:
+#include<stdio.h>
+int (int add,int sub)
+{
+int n,m;
+scanf("%d%d",&n,&m);
+add = n+m;
+sub = n-m;
+
 
 
 ## OUTPUT:
