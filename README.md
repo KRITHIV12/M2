@@ -99,22 +99,36 @@ Write a C program to perform addition and subtraction of two numbers using funct
 4.	Call the addition and subtraction functions, passing the two numbers as arguments.
 
 ## PROGRAM:
-#include<stdio.h>
-int (int add,int sub)
-{
-int n,m;
-scanf("%d%d",&n,&m);
-add = n+m;
-sub = n-m;
+#include <stdio.h>
 
+void add(int a, int b) {
+    int sum = a + b;
+    printf("Addition = %d\n", sum);
+}
 
+void subtract(int a, int b) {
+    int diff = a - b;
+    printf("Subtraction = %d\n", diff);
+}
+
+int main() {
+    int num1, num2;
+
+    scanf("%d %d", &num1, &num2);
+
+    add(num1, num2);       
+    subtract(num1, num2);   
+
+    return 0;
+}
 
 ## OUTPUT:
+Input:
+Enter two integers: 10,5
 
-
-
-
-
+Output:
+Addition = 15  
+Subtraction = 5
 
 ## RESULT:
 
