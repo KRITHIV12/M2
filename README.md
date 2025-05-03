@@ -153,12 +153,25 @@ Write a c program to find the sum of odd digits using for loop
 6.	Print the sum of odd digits.
 
 ## PROGRAM:
+#include <stdio.h>
 
+int main() {
+int number, digit, sum = 0;
+scanf("%d", &number);
+int temp = number;
+for (; temp != 0; temp /= 10) {
+digit = temp % 10; // Step 4: Extract rightmost digit
+if (digit % 2 != 0) {
+sum += digit;
+}
+}
+printf("Sum of odd digits= %d\n", sum);
+return 0;
+}
 
 ## OUTPUT:
-
-
-
+number=12345
+sum of odd digits =9
 
 ## RESULT:
 
@@ -183,9 +196,28 @@ d.	After the loop, print the factorial value.
 5.	End
 
 ## PROGRAM:
-
+#include <stdio.h>
+void fact();
+int main() {
+fact();
+return 0;
+}
+void fact() {
+int i, N;
+long long factorial = 1; 
+scanf("%d", &N);
+if (N < 0) {
+return;
+}
+for (i = 1; i <= N; i++) {
+factorial *= i;
+}
+printf("Factorial of %d = %lld\n", N, factorial);
+}
 
 ## OUTPUT:
+N=5;
+factorial=120
 
 ## RESULT:
 The program correctly computes the factorial of a given number using a separate function and displays the result.
