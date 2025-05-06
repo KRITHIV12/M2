@@ -30,15 +30,13 @@ return 0;
 }
 
 ## OUTPUT:
-Enter the value of M: 4
-Enter the value of N: 16
-output : 4 6 8 10 12 14 16
+![Screenshot 2025-05-06 160018](https://github.com/user-attachments/assets/c39fb4fc-02da-4742-a453-65fd786dcc78)
+
 
 ## RESULT:
 Thus the program to print even numbers ranging from M to N (including M and N values) has been executed successfully
  
  
-
 
 # EX-07-Nested-loop
 
@@ -71,12 +69,8 @@ return 0;
 }
 
 ## OUTPUT:
-Enter number of rows: 5
-#
-##
-###
-####
-#####
+![Screenshot 2025-05-06 160118](https://github.com/user-attachments/assets/314e0201-d863-43a3-b9e2-f3709f9d0ea3)
+
 
 ## RESULT:
 
@@ -123,12 +117,9 @@ int main() {
 }
 
 ## OUTPUT:
-Input:
-Enter two integers: 10,5
 
-Output:
-Addition = 15  
-Subtraction = 5
+![Screenshot 2025-05-06 160227](https://github.com/user-attachments/assets/e248173c-8355-4c53-9811-5300135a362c)
+
 
 ## RESULT:
 
@@ -160,7 +151,7 @@ int number, digit, sum = 0;
 scanf("%d", &number);
 int temp = number;
 for (; temp != 0; temp /= 10) {
-digit = temp % 10; // Step 4: Extract rightmost digit
+digit = temp % 10; 
 if (digit % 2 != 0) {
 sum += digit;
 }
@@ -170,8 +161,8 @@ return 0;
 }
 
 ## OUTPUT:
-number=12345
-sum of odd digits =9
+![Screenshot 2025-05-06 160453](https://github.com/user-attachments/assets/c6e2fefa-e456-46ec-873c-fa49db0b0857)
+
 
 ## RESULT:
 
@@ -216,8 +207,7 @@ printf("Factorial of %d = %lld\n", N, factorial);
 }
 
 ## OUTPUT:
-N=5;
-factorial=120
+![Screenshot 2025-05-06 160613](https://github.com/user-attachments/assets/727361aa-75a4-4d1f-b287-66176eb0cdc6)
 
 ## RESULT:
 The program correctly computes the factorial of a given number using a separate function and displays the result.
